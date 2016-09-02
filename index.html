@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Is it donut day?
+  </title>
+  <meta name="viewport" content="initial-scale=1" />
+  <style type="text/css">
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+
+    #result {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    #result > div {
+      display: none;
+    }
+
+    #result.yeah-boy .yep,
+    #result.damnit .nope{
+      display: block;
+    }
+
+  </style>
+  <script type="text/javascript">
+    function isItDonutDay() {
+      var today = new Date();
+      var result = document.getElementById('result');
+      result.className = (today.getDay() == 5) ? 'yeah-boy' : 'damnit';
+    }
+
+    window.onload = isItDonutDay;
+  </script>
+</head>
+<body>
+  <h1>Is it donut day?</h1>
+  <div id="result">
+    <div class="nope">No :(</div>
+    <div class="yep">Yep!<br /> <img src="https://67.media.tumblr.com/82a98ba71d60495ae0789aa876429f7f/tumblr_n0cpp9fflP1sia4voo1_400.gif" /></div>
+  </div>
+</body>
+</html>
