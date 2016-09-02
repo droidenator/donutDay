@@ -27,6 +27,13 @@
       display: block;
     }
 
+    #result > div span,
+    #result > div img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+
   </style>
   <script type="text/javascript">
     function isItDonutDay() {
@@ -41,8 +48,15 @@
 <body>
   <h1>Is it donut day?</h1>
   <div id="result">
-    <div class="nope">No :(</div>
-    <div class="yep">Yep!<br /> <img src="https://67.media.tumblr.com/82a98ba71d60495ae0789aa876429f7f/tumblr_n0cpp9fflP1sia4voo1_400.gif" /></div>
+    <div class="nope">
+      <span>No</span>
+      <img src="http://gifrific.com/wp-content/uploads/2015/06/Homer-Simpson-Screaming.gif" />      
+    </div>
+    <div class="yep">
+      <span>Yep!</span>
+      <img src="https://67.media.tumblr.com/82a98ba71d60495ae0789aa876429f7f/tumblr_n0cpp9fflP1sia4voo1_400.gif" />
+      <img src="http://37.media.tumblr.com/0889a5612127a368bbe46dbecd557af3/tumblr_n6r8aqiC5L1tv7yt8o4_500.gif" />
+    </div>
   </div>
 </body>
 </html>
